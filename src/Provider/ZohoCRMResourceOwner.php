@@ -33,7 +33,7 @@ class ZohoCRMResourceOwner implements ResourceOwnerInterface
      */
     public function getId()
     {
-        return $this->getValueByKey($this->response, 'data.0.id');
+        return $this->getValueByKey($this->response, 'org.0.id');
     }
 
     /**
@@ -43,7 +43,7 @@ class ZohoCRMResourceOwner implements ResourceOwnerInterface
      */
     public function getOrganizationName()
     {
-        return $this->getValueByKey($this->response, 'data.0.company_name');
+        return $this->getValueByKey($this->response, 'org.0.company_name');
     }
 
     /**
